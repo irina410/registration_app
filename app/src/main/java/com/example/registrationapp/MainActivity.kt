@@ -1,6 +1,7 @@
 package com.example.registrationapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -62,6 +63,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+        binding.textAuth.setOnClickListener{
+            startActivity(Intent(this,AuthActivity::class.java))
+        }
 
 
     }

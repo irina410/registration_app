@@ -29,8 +29,15 @@ public class DBHelper(val context: Context, val factory: SQLiteDatabase.CursorFa
         values.put("pass", user.pass)
 
         val database = this.writableDatabase
-        database.insert("user", null, values)
+        database.insert("users", null, values)
 
         database.close()
+    }
+
+    fun getUser(login: String, pass: String): Boolean{
+        val db = this.readableDatabase
+        val res = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND pass = '$pass'", null)
+        return res.moveToFirst()
+
     }
 }

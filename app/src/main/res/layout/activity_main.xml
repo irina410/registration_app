@@ -92,5 +92,16 @@
             android:textStyle="bold"
             android:text="sign up"
             android:backgroundTint="#46464368"/>
+
+        <TextView
+            android:id="@+id/textAuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="16dp"
+
+            android:text="Do you have an account? log in"
+            android:textColor="@color/white" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
