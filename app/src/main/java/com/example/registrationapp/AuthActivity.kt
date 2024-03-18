@@ -45,6 +45,9 @@ class AuthActivity : AppCompatActivity() {
                     Toast.makeText(this, "Пользователь $userLogin авторизован", Toast.LENGTH_LONG).show()
                     binding.userPassEditTextAuth.text.clear()
                     binding.userLoginEditTextAuth.text.clear()
+
+                    startActivity(Intent(this,ItemActivity ::class.java))
+
                 }else{
                     Toast.makeText(this, "чьтото не так(", Toast.LENGTH_LONG).show()
 

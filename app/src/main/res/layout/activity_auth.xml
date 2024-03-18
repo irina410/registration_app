@@ -24,15 +24,16 @@
 
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:textColorHint="#8AFFFFFF"
         android:layout_gravity="center"
         android:layout_marginTop="36dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="enter your username"
+        android:inputType="text"
+        android:minHeight="48dp"
 
-        android:hint="enter your username" />
+        android:textColor="@color/white"
+        android:textColorHint="#8AFFFFFF" />
 
 
     <EditText
@@ -40,27 +41,31 @@
 
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:textColorHint="#8AFFFFFF"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="enter your password"
         android:inputType="numberPassword"
+        android:minHeight="48dp"
 
-        android:hint="enter your password"/>
+        android:textColor="@color/white"
+        android:textColorHint="#8AFFFFFF" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_login"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/bttnbgrt"
         android:layout_gravity="center"
+        android:textColor="@color/white"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="56dp"
+        android:text="login"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:text="login"
-        android:backgroundTint="#46DAA7F3"/>
+       />
+
 
     <TextView
         android:id="@+id/textVReg"
