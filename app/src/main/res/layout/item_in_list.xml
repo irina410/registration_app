@@ -2,17 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp"
     android:layout_marginBottom="24dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#29EAE2F1">
+    android:id="@+id/layout_of_item"
+    android:background="@drawable/rounded_background">
 
     <ImageView
         android:id="@+id/item_imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
+
+        android:background="@drawable/rounded_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,6 +28,7 @@
         android:layout_marginLeft="16dp"
         android:text="TextView"
         android:textSize="28dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +40,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:textSize="20dp"
-        android:text="TextView"
+        android:layout_marginRight="16dp"
         android:gravity="right"
+        android:text="TextView"
+        android:fontFamily="@font/autour_one"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_desc" />
@@ -56,18 +63,7 @@
 <!--        app:layout_constraintTop_toBottomOf="@+id/item_price"-->
 <!--        app:srcCompat="@android:drawable/ic_menu_info_details" />-->
 
-    <TextView
-        android:id="@+id/item_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
-        android:textSize="18dp"
-        android:background="#5BF9F6FB"
-        app:layout_constraintTop_toBottomOf="@id/item_name"/>
+
 <!--        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />-->
 
 

@@ -35,5 +35,7 @@ class ItemActivity : AppCompatActivity() {
         itemsList.layoutManager = LinearLayoutManager(this)
         itemsList.adapter = ItemsAdapter(items, this)
 
+
+
     }
 }
