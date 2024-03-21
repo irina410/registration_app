@@ -20,8 +20,9 @@ class MainActivityItem : AppCompatActivity() {
 
         binding.name.text = intent.getStringExtra("NAME")
         binding.itemDesc.text = intent.getStringExtra("DESC")
-        binding.itemPrice.text = intent.getStringExtra("PRICE")
-        binding.imageViewoftitle.setImageResource(intent.getIntExtra("IMG", 0))
-
+        binding.itemPrice.text = "стоит " + intent.getStringExtra("PRICE") + "деняк"
+        var imgName = intent.getStringExtra("IMG")
+        var imgId = resources.getIdentifier(imgName, "drawable", packageName)
+        binding.imageViewoftitle.setImageResource(imgId)
     }
 }
